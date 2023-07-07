@@ -48,10 +48,7 @@ const TextField: FC<inputProps> = ({
       className={`w-full flex flex-col justify-start items-start gap-1 ${groupClass}`}
     >
       {label && (
-        <label
-          htmlFor={identifier}
-          className="text-gray text-[12px] uppercase leading-[15px]"
-        >
+        <label htmlFor={identifier} className="text-gray text-xs uppercase ">
           {label}
         </label>
       )}
@@ -79,9 +76,11 @@ const TextField: FC<inputProps> = ({
                 inputRef.current?.focus();
                 prefixCb && prefixCb();
               }}
-              className="absolute z-50 left-5 top-1/2 -translate-y-1/2 w-6 h-6  "
+              className="absolute z-50 left-5 top-1/2 -translate-y-1/2 2xl:w-6 2xl:h-6  "
             >
-              <i className={`text-gray text-[16px] ${prefixIcon}`}></i>
+              <i
+                className={`text-gray text-base lg:text-xl 2xl:text-2xl ${prefixIcon}`}
+              ></i>
             </button>
           )}
           <input
@@ -104,9 +103,11 @@ const TextField: FC<inputProps> = ({
               onClick={() => {
                 suffixCb && suffixCb();
               }}
-              className="absolute z-50 right-1.5 top-1/2 -translate-y-1/2 w-6 h-6"
+              className="absolute z-50 right-1.5 top-1/2 -translate-y-1/2 2xl:w-6 2xl:h-6"
             >
-              <i className={`text-red-400 text-[24px] ${suffixIcon}`}></i>
+              <i
+                className={`text-red-400 text-base lg:text-xl 2xl:text-2xl ${suffixIcon}`}
+              ></i>
             </button>
           )}
         </div>

@@ -37,20 +37,20 @@ const Button: FC<buttonProps> = ({
         icon ? "px-0 py-0" : ""
       } ${suffixIcon ? "flex gap-x-2" : ""} ${
         prefixIcon ? "flex gap-x-2" : ""
-      } ${
-        btnText ? "text-[18px] leading-[27px] text-center py-[26px] px-7" : ""
-      } ${
+      } ${btnText ? "text-lg text-center py-[26px] px-7" : ""} ${
         variant === "outlined"
-          ? "bg-white border-2 rounded-full h-10 w-10 border-red-400"
+          ? "bg-white border-2 rounded-full border-red-400 h-5 w-5 md:h-[23px] md:w-[23px] lg:h-[26px] lg:w-[26px] xl:h-8 xl:w-8 2xl:h-10 2xl:w-10"
           : variant === "naked"
           ? "text-gray bg-white"
           : ""
       } ${btnClass}`}
     >
-      {prefixIcon && <i className={`text-[16px] ${prefixIcon}`}></i>}
-      {icon && <i className={`text-[16px] ${icon}`}></i>}
+      {prefixIcon && <i className={`text-base ${prefixIcon}`}></i>}
+      {icon && (
+        <i className={`text-[10px] lg:text-xs 2xl:text-base ${icon}`}></i>
+      )}
       {btnText}
-      {suffixIcon && <i className={`text-[16px] ${suffixIcon}`}></i>}
+      {suffixIcon && <i className={`text-base ${suffixIcon}`}></i>}
     </button>
   );
 };

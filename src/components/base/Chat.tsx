@@ -22,7 +22,7 @@ const Chat: FC<chatProps> = ({
           {title}
         </div>
         <Button
-          icon="fas fa-times-circle text-red-400 text-[20px] md:text-[24px] lg:text-[28px] xl:text-[34px] 2xl:text-[40px]"
+          icon="fas fa-times-circle text-red-400 !text-[20px] md:!text-[24px] lg:!text-[28px] xl:!text-[34px] 2xl:!text-[40px]"
           actionCb={closeCb}
         />
       </div>
