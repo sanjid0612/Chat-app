@@ -22,13 +22,13 @@ const Chat: FC<chatProps> = ({
           {title}
         </div>
         <Button
-          icon="fas fa-times-circle text-red-400 !text-[20px] md:!text-[24px] lg:!text-[28px] xl:!text-[34px] 2xl:!text-[40px]"
+          icon="fas fa-times-circle text-red-400 !text-[20px] md:!text-2xl lg:!text-[28px] xl:!text-[32px] 2xl:!text-[40px]"
           actionCb={closeCb}
         />
       </div>
       {children}
       {hasCallBtn && (
-        <div className="py-[74px] w-full flex justify-center items-center gap-x-[58px]">
+        <div className="py-[74px] text w-full flex justify-center items-center gap-x-[58px]">
           <div className="h-16 w-16 rounded-full flex justify-center items-center bg-gray">
             <Button
               icon="fas fa-microphone text-[#474747] text-[30px]"

@@ -77,7 +77,7 @@ const MessengerPage = () => {
               </div>
               {/* profile ends  */}
               <div className="flex flex-col gap-y-1.5 lg:gap-y-2 2xl:gap-y-2.5">
-                <div className="max-w-xs lg:max-w-md 2xl:max-w-[600px] flex flex-row justify-start border border-ash-400 rounded-xl rounded-tl-none lg:rounded-tl-none lg:rounded-[20px] p-4 pr-1 md:pt-5 lg:pt-6 lg:p-5 xl:pt-8 2xl:pt-10 2xl:p-6 ">
+                <div className="max-w-xs lg:max-w-md 2xl:max-w-[600px] flex flex-row justify-start border border-ash-400 rounded-xl !rounded-tl-none xl:rounded-[20px] p-4 pr-1 md:pt-5 lg:pt-6 lg:p-5 xl:pt-8 2xl:pt-10 2xl:p-6 ">
                   <span className="border h-auto rounded-full border-red-400"></span>
                   <div className="flex flex-col justify-start gap-y-2 pl-3 pb-5">
                     <p className="font-inter font-normal text-[10px] leading-3 text-black md:text-[11px] lg:text-[13px] 2xl:text-sm xl:leading-4">
@@ -117,7 +117,7 @@ const MessengerPage = () => {
               </div>
               {/* profile ends  */}
               <div className="flex flex-col gap-y-1.5 lg:gap-y-2 2xl:gap-y-2.5">
-                <div className="w-[300px] sm:w-[301px] lg:w-[401px] 2xl:w-[501px] border border-ash-400 rounded-xl rounded-tl-none lg:rounded-tl-none lg:rounded-[20px] font-poppins font- normal text-[#B5BFD6] text-[10px] leading-3 md:text-xs lg:text-sm xl:text-[15px] 2xl:text-base p-4 pr-1 lg:p-5 xl:p-6 2xl:p-[30px]">
+                <div className="w-[300px] sm:w-[301px] lg:w-[401px] 2xl:w-[501px] border border-ash-400 rounded-xl !rounded-tl-none xl:rounded-[20px] font-poppins font- normal text-[#B5BFD6] text-[10px] leading-3 md:text-xs lg:text-sm xl:text-[15px] 2xl:text-base p-4 pr-1 lg:p-5 xl:p-6 2xl:p-[30px]">
                   Check this out
                 </div>
                 <span className="text-right text-[10px] leading-3 font-poppins font-normal text-[#B5BFD6] mr-16 md:text-[11px] md:leading-4 lg:text-xs 2xl:text-sm">
@@ -127,27 +127,25 @@ const MessengerPage = () => {
               {/* msg box ends */}
             </div>
             {/* message 02 ends  */}
-            <div className="mt-[38px] w-[284px] flex justify-between bg-red-400 rounded-xl rounded-br-none lg:rounded-[20px] lg:rounded-br-none ml-auto pt-5 pb-2 px-4 2xl:pt-9 2xl:pb-3 2xl:px-5">
+            <div className="mt-[38px] w-[284px] flex justify-between bg-red-400 rounded-xl !rounded-br-none xl:rounded-[20px] ml-auto pt-5 pb-2 px-4 2xl:pt-9 2xl:pb-3 2xl:px-5">
               <i className="fas fa-pause-circle text-white text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-[28px] ml-auto"></i>
             </div>
           </div>
           <div className="mt-auto 2xl:pr-[100px] ">
             <MsgTypingArea />
-            <div className="w-full flex flex-row justify-start gap-x-4 pt-2.5 pb-[30px] pl-4 pr-[13px]">
+            <div className="w-full flex flex-row justify-start gap-x-2.5 xl:gap-x-3 2xl:gap-x-4 pt-2.5 pb-[30px] px-1 lg:pl-4 lg:pr-[13px]">
               <Button
-                icon="fas fa-microphone text-red-400 text-[23px]"
+                icon="fas fa-microphone text-red-400 !text-base xl:!text-xl 2xl:!text-2xl"
                 actionCb={() => {}}
               />
-              <div className="py-1.5 px-2 flex justify-between rounded-full w-full bg-red-400">
-                <div className="">
-                  <i className="fas fa-stop-circle text-[25px] text-white"></i>
-                </div>
-                <div className="w-[62px] flex justify-center items-center py-0.5 rounded-full bg-white text-[14px] leading-5 font-poppins font-medium ">
+              <div className="py-1.5 px-2 flex justify-between items-center rounded-full w-full bg-red-400">
+                <i className="fas fa-stop-circle text-base lg:text-xl 2xl:text-[25px] text-white"></i>
+                <p className="w-[62px] flex justify-center items-center py-0.5 rounded-full bg-white text-[10px] leading-3 md:text-xs lg:text-[13px] 2xl:text-sm font-poppins font-medium ">
                   0:45
-                </div>
+                </p>
               </div>
               <Button
-                icon="fas fa-location-arrow text-black rotate-[45deg] text-[24px]"
+                icon="fas fa-location-arrow text-black rotate-45 !text-base lg:!text-xl 2xl:!text-2xl"
                 actionCb={() => {}}
               />
             </div>
