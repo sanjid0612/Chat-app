@@ -10,8 +10,8 @@ const VideoCall = () => {
       callEndCb={() => {}}
       hasCallBtn={true}
     >
-      <div className="w-full h-full flex flex-row justify-end gap-x-8 ml-auto pt-6 pb-4 pr-[89px]">
-        <div className="h-[681px] w-[694px] rounded-[20px] overflow-hidden relative">
+      <div className="w-full h-full flex flex-row justify-center lg:justify-end gap-x-8 pt-6 pb-4 relative lg:pr-[89px]">
+        <div className="w-full h-[435px] sm:h-[480px] sm:w-[400px] lg:w-[444px] xl:h-[545px] xl:w-[555px] 2xl:h-[681px] 2xl:w-[694px] rounded-[20px] overflow-hidden relative">
           <Image
             fill
             src={
@@ -20,7 +20,7 @@ const VideoCall = () => {
             alt="image"
           />
         </div>
-        <div className="h-[196px] w-[221px] rounded-[20px] mt-auto overflow-hidden relative">
+        <div className="h-[196px] w-[221px] rounded-[20px] mt-auto overflow-hidden absolute -translate-x-[22%] translate-y-[5%] sm:translate-y-[16%] sm:-translate-x-[18%] left-1/2 top-1/2 lg:left-0 lg:top-0 lg:translate-y-0 lg:-translate-x-0 lg:relative">
           <Image
             fill
             src={

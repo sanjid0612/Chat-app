@@ -11,10 +11,10 @@ import MessengerPage from "./messenger/page";
 export default function Home() {
   return (
     <div className="flex flex-col ">
-      {/* <MiniChatPage />
+      <MiniChatPage />
       <AudioCall />
       <VideoCall />
-      <ChatNotFound /> */}
+      <ChatNotFound />
       <MessengerPage />
       <ActionModal
         modalStates={{

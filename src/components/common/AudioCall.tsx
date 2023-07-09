@@ -13,7 +13,7 @@ const AudioCall = () => {
       <div className="w-full pt-[151px] pb-[384px] h-full">
         <CommonProfile
           name="Ijafiya Nafa"
-          imgClass="!h-[112px] !w-[112px]"
+          imgClass="!w-7 !h-7 sm:!w-11 sm:!h-11 md:!h-14 md:!w-14 lg:!h-[72px] lg:!w-[72px] xl:!h-[90px] xl:!w-[90px] 2xl:!h-[112px] 2xl:!w-[112px]"
           groupClass="flex-col !gap-4"
           nameClass="text-[18px] font-medium"
           details="calling......"
